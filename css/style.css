@@ -1,0 +1,210 @@
+
+
+/*Login section*/
+
+.login-section { 
+    position: fixed;
+    right: 0;
+    top: 0;
+    
+ z-index: 1;
+ 
+}
+.login-section a{
+    float: right;  
+}
+
+/*Header section*/
+.header{
+    display: iblock;
+    background: rgb(118, 194, 142);
+    color: aliceblue;
+}
+.header h1{
+    text-align: center;
+    
+    text-shadow: 1px 1px 2px red;
+}
+
+
+/* body */
+.body{
+  width: 100%;
+  height: 100vh;
+  margin:auto;
+  background: rgb(79, 143, 178);  
+  position: relative;
+}
+.body .lotary{
+    /* animation properties */
+    animation-name: my-animation;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    /* other properties */
+    width: 50%;
+    height: 65%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto;
+    margin-right: auto; 
+  
+  }
+  
+  @keyframes my-animation {
+    from {
+      background-color: #ff7a59;
+      width: 100%;
+      top: 100px;
+    }
+    to {
+      background-color: #33475b;
+      width: 50px;
+      bottom: 100px;
+    }
+  }
+  .lotary img{
+    z-index: 1;
+    position: relative;
+  }
+  .lotary h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color : rgb(108, 0, 250);
+    z-index: 1;
+    text-align: center;    
+    text-shadow: 1px 1px 2px red;
+    font-weight: 900;
+  }
+
+  /* price-section */
+
+
+  .price-section{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: rgb(249, 243, 243);
+
+  }
+  .price-section h2{
+    font-weight: 900;    
+    text-shadow: 1px 1px 2px rgb(0, 51, 255);
+  }
+  hr{
+    width:30%;
+    height:50px;
+    border: red;
+    font-weight: 700;
+    background: red;
+    margin: auto;
+  }
+  .price-section marquee{
+
+    font-weight: 600;
+    margin-top: -10px;
+  }
+  
+  .price-section h3{
+    border: 3px  solid red;
+    border-radius: 20px 4px 60px 8px;
+    color: red;
+    font-weight: 600;
+    padding: 5px 20px;
+    text-align: center;
+  }
+
+  footer{
+    width: 100%;
+    height: 60vh;
+    padding-top: 20px;
+    background: #000;
+    position: relative;
+  }
+  
+  footer .f-1,.f-2,.f-3{
+    display: inline-block;
+    height: auto;
+     color:rgb(0, 51, 255);
+     font-size: 20px;
+     text-align: center;
+     margin-bottom: 1%;
+     margin-left: 1%;
+     transform: translate(0%,0%,-1%,-10%);
+     
+  } 
+  .footer{
+    display: block;
+    bottom :0px;
+    width: 100%;
+    text-align: center;
+
+
+
+  }
+  @media only screen and (max-width: 766px) {
+    .login-section { 
+     display: none;
+    
+      
+   z-index: 1;
+   
+  }
+  .login-section a{
+      color: #ff7a59; 
+      background: #000;
+  }
+  }
+  .action{
+    width: 70%;
+    height: 20vh;
+    background: red;
+    margin: auto;
+    text-align: center;
+    padding: 3px;
+    border-radius: 0px 90px 0px 200px;
+  }
+  
+  @media only screen and (max-width: 766px) {
+    
+  .action{
+     display: none;
+  }
+  
+  .action h4{
+    color: black;
+    font-weight: 800;
+    text-shadow: 4px 1px 2px rgb(50, 241, 12);
+  
+  
+ }
+}
+
+@media only screen and (max-width: 500px) {
+   
+  footer{
+    width: 100%;
+    height: auto;
+    background: #000;
+    position: relative;
+  }
+  
+  footer .f-1,.f-2,.f-3{
+    display: inline-block;
+    height: auto;
+     color:rgb(0, 51, 255);
+     font-size: 20px;
+     text-align: center;
+     margin-bottom: 1%;
+     margin-left: 1%;
+     transform: translate(0%,0%,-1%,-10%);
+     
+  } 
+}
